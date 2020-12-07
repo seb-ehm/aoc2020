@@ -43,9 +43,6 @@ func main() {
 		goal := 2020 - value
 		for j := i + 1; j < 200; j++ {
 			target := goal-contents[j]
-			/*if target >= 0 {
-				fmt.Printf("Value: %d , Current: %d Target: %d \n", value, contents[j], target)
-			}*/
 			if data[target] {
 				fmt.Printf("Three sum: \n %d, %d, %d \n", value, contents[j], goal-contents[j])
 				fmt.Println(value * contents[j] * (goal-contents[j]))
